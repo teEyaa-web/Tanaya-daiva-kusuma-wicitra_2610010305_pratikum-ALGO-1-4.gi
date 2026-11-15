@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KelolaBukuWindow</class>
+ <widget class="QMainWindow" name="KelolaBukuWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Qt Perpustakaan - Kelola Data Buku</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayoutMain">
+    <property name="leftMargin"><number>30</number></property>
+    <property name="topMargin"><number>30</number></property>
+    <property name="rightMargin"><number>30</number></property>
+    <property name="bottomMargin"><number>30</number></property>
+    <item>
+     <widget class="QLabel" name="lblTitle">
+      <property name="text">
+       <string>📖 KELOLA DATA BUKU</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayoutInput">
+        <item>
+         <widget class="QLabel" name="lblIdBuku"><property name="text"><string>ID Buku (ISBN):</string></property></widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtIdBuku"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblJudul"><property name="text"><string>Judul Buku:</string></property></widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtJudul"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblPengarang"><property name="text"><string>Pengarang:</string></property></widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtPengarang"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblPenerbit"><property name="text"><string>Penerbit:</string></property></widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtPenerbit"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblTahun"><property name="text"><string>Tahun Terbit:</string></property></widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtTahun"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblStok"><property name="text"><string>Jumlah Stok:</string></property></widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtStok"/>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayoutButtons">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="btnTambah"><property name="text"><string>Tambah</string></property></widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="btnEdit"><property name="text"><string>Edit</string></property></widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="btnHapus"><property name="text"><string>Hapus</string></property></widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="btnBersihkan"><property name="text"><string>Bersihkan</string></property></widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableBuku">
+        <column>
+         <property name="text"><string>ID Buku</string></property>
+        </column>
+        <column>
+         <property name="text"><string>Judul</string></property>
+        </column>
+        <column>
+         <property name="text"><string>Pengarang</string></property>
+        </column>
+        <column>
+         <property name="text"><string>Penerbit</string></property>
+        </column>
+        <column>
+         <property name="text"><string>Tahun</string></property>
+        </column>
+        <column>
+         <property name="text"><string>Stok</string></property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnKembali">
+      <property name="text">
+       <string>↩ Kembali ke Menu Utama</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

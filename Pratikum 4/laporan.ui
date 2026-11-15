@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LaporanWindow</class>
+ <widget class="QMainWindow" name="LaporanWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Qt Perpustakaan - Laporan &amp; Statistik</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayoutMain">
+    <property name="leftMargin"><number>30</number></property>
+    <property name="topMargin"><number>30</number></property>
+    <property name="rightMargin"><number>30</number></property>
+    <property name="bottomMargin"><number>30</number></property>
+    <item>
+     <widget class="QLabel" name="lblTitle">
+      <property name="text">
+       <string>📊 LAPORAN &amp; STATISTIK PERPUSTAKAAN</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutStats">
+      <item>
+       <widget class="QLabel" name="lblTotalBuku">
+        <property name="text">
+         <string>Total Inventaris Buku: 0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblActiveLoans">
+        <property name="text">
+         <string>Sedang Dipinjam: 0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblTotalDenda">
+        <property name="text">
+         <string>Total Denda Terkumpul: Rp 0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="lblTableTitle">
+      <property name="text">
+       <string>🏆 Daftar Buku Paling Sering Dipinjam</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tablePopuler">
+      <column><property name="text"><string>ID Buku</string></property></column>
+      <column><property name="text"><string>Judul Buku</string></property></column>
+      <column><property name="text"><string>Pengarang</string></property></column>
+      <column><property name="text"><string>Jumlah Dipinjam</string></property></column>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutBottom">
+      <item>
+       <widget class="QPushButton" name="btnRefresh">
+        <property name="text">
+         <string>🔄 Refresh Data</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnKembali">
+        <property name="text">
+         <string>↩ Kembali ke Menu Utama</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

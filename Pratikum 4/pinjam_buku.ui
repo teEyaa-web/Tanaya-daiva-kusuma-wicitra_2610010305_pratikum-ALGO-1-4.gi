@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PinjamBukuWindow</class>
+ <widget class="QMainWindow" name="PinjamBukuWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Qt Perpustakaan - Form Peminjaman Buku</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayoutMain">
+    <property name="leftMargin"><number>30</number></property>
+    <property name="topMargin"><number>30</number></property>
+    <property name="rightMargin"><number>30</number></property>
+    <property name="bottomMargin"><number>30</number></property>
+    <item>
+     <widget class="QLabel" name="lblTitle">
+      <property name="text">
+       <string>📥 FORM PEMINJAMAN BUKU</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayoutMain">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayoutInput">
+        <item>
+         <widget class="QLabel" name="lblIdPinjam"><property name="text"><string>ID Pinjam:</string></property></widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtIdPinjam">
+          <property name="placeholderText"><string>Contoh: PJ001</string></property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblNamaPeminjam"><property name="text"><string>Nama Peminjam:</string></property></widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="txtNamaPeminjam"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblBuku"><property name="text"><string>Pilih Buku:</string></property></widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="cmbBuku"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblTanggalPinjam"><property name="text"><string>Tanggal Pinjam:</string></property></widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="datePinjam">
+          <property name="calendarPopup"><bool>true</bool></property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblDurasi"><property name="text"><string>Durasi (Hari):</string></property></widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spinDurasi">
+          <property name="minimum"><number>1</number></property>
+          <property name="maximum"><number>30</number></property>
+          <property name="value"><number>7</number></property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutButtons">
+          <item>
+           <widget class="QPushButton" name="btnPinjam"><property name="text"><string>Pinjam Buku</string></property></widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnBersihkan"><property name="text"><string>Bersihkan</string></property></widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayoutTable">
+        <item>
+         <widget class="QLabel" name="lblTableTitle">
+          <property name="text"><string>📄 Daftar Buku Sedang Dipinjam (Aktif)</string></property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tablePeminjaman">
+          <column><property name="text"><string>ID Pinjam</string></property></column>
+          <column><property name="text"><string>Nama Peminjam</string></property></column>
+          <column><property name="text"><string>ID Buku</string></property></column>
+          <column><property name="text"><string>Judul Buku</string></property></column>
+          <column><property name="text"><string>Tgl Pinjam</string></property></column>
+          <column><property name="text"><string>Durasi</string></property></column>
+          <column><property name="text"><string>Status</string></property></column>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnKembali">
+      <property name="text">
+       <string>↩ Kembali ke Menu Utama</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
